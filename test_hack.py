@@ -13,13 +13,9 @@ from hack_10 import fn_hack_10
 # h-1
 def test_hack_1():
     v = fn_hack_1()
-    ck_1 = isinstance(v, tuple) and len(v) == 4
-    ck_2 = isinstance(v[0], int) and not isinstance(v[0], bool)
-    ck_3 = isinstance(v[1], float)
-    ck_4 = isinstance(v[2], str)
-    ck_5 = isinstance(v[3], bool)
-    ck_6 = v == (10, 3.14, "42", True)
-    assert (ck_1, ck_2, ck_3, ck_4, ck_5, ck_6) == (True, True, True, True, True, True)
+    ck_1 = isinstance(v, str)
+    ck_2 = v == "FOOZIMAN"
+    assert (ck_1, ck_2) == (True, True)
 
 
 # h-2
